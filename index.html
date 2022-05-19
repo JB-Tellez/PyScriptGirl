@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PyScriptGirl</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+</head>
+<body>
+
+<section>
+    <h1>Game <span id="game-id" /></h1>
+    <p id="prompt"/>
+    <p id="unsolved-word" />
+    <p>Incorrect guesses: <span id="incorrect-guesses" /></p>
+    <p>Incorrect Guesses left: <span id="tries-left" /></p>
+</section>
+
+<section id="letter-buttons" pys-onClick="clickHandler" />
+
+<py-script src="pygirl.py" />
+</body>
+</html>
